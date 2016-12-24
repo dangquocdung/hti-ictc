@@ -6,9 +6,9 @@ var port = process.env.PORT || 8081;
 
 var pool      =    mysql.createPool({
     connectionLimit : 100, //important
-    host     : 'localhost',
-    user     : 'root',
-    password : '',
+    host     : 'dungthinh.com',
+    user     : 'hatinh6t',
+    password : 'hatinh6t@123',
     database : 'hatinh6t',
     debug    :  false
 });
