@@ -1,0 +1,192 @@
+.navbar{
+  margin-bottom:0;
+
+  a{
+    color: set-text-color($main-color) !important;
+  }
+
+  .fa{
+    font-size:18px;
+  }
+
+  .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f70606 !important;
+
+  }
+
+}
+
+
+
+.showcase{
+  background:#e6ebf1;
+  padding:30px 0;
+
+  img{
+    width: 100%;
+  }
+
+  h1{
+    font-size:60px;
+  }
+
+  h3{
+    text-transform: uppercase;
+  }
+
+  .container{
+    background: #fff;
+    opacity: 0.8;
+    padding: 20px 30px 30px 30px;
+  }
+}
+
+.section-a{
+  padding: 30px 0;
+  text-align: center;
+  background: $main-color;
+  color: set-text-color($main-color);
+
+  .fa{
+    font-size: $icon-size;
+    color: white;
+    background-color: lighten($main-color, 5%);
+    padding: 20px;
+
+    &:hover {
+      background-color: rgb(222, 131, 35);
+
+    }
+  }
+
+
+
+  .title{
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .block-dichvu{
+    background: lighten($main-color, 10%);
+    padding:15px;
+    margin-top: -35px;
+    margin-bottom: 15px;
+
+    h3{
+      margin-top: 30px;
+    }
+
+    p{
+      text-align: justify;
+    }
+  }
+}
+
+.section-b{
+  background:#e6ebf1;
+  padding: 30px 0;
+
+  img{
+    width:100%;
+  }
+}
+
+.panel-heading h4{
+  color: set-text-color($main-color);
+}
+
+.section-c{
+  padding: 60px 0;
+  text-align: center;
+  background: $main-color;
+  color: set-text-color($main-color);
+
+  h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .btn-primary{
+    background: darken($main-color, 10%);
+  }
+}
+
+.section-d{
+
+  background:$main-color;
+  padding: 30px 0;
+
+  h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #owl-demo {
+
+    .item{
+    background: #3fbf79;
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    }
+
+  }
+
+  .customNavigation{
+    text-align: center;
+  }
+//use styles below to disable ugly selection
+  .customNavigation a{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+}
+
+
+
+.section-e{
+    background:#e6ebf1;
+    padding: 30px 10px;
+
+    h2{
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    p{
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+}
+
+.title-bar{
+  background: url(../img/showcase.jpg) no-repeat 0 -300px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid $main-color;
+}
+
+.main{
+  margin-top:30px;
+}
+
+footer{
+  padding:30px 0;
+  background: darken($main-color, 10%);
+  color: set-text-color($main-color);
+}
