@@ -34,19 +34,25 @@ module.exports = function(app,pool) {
 
     app.get("/about", function(req, res) {
 
-      res.render('about.ejs');
+      res.render('about');
+
+    });
+
+    app.get("/power", function(req, res) {
+
+      res.render('power');
 
     });
 
     app.get("/services", function(req, res) {
 
-      res.render('services.ejs');
+      res.render('services');
 
     });
 
     app.get("/contact", function(req, res) {
 
-      res.render('contact.ejs');
+      res.render('contact');
 
     });
   }

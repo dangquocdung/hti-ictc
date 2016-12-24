@@ -8158,6 +8158,14 @@ button.close {
     opacity: 0.8;
     padding: 20px 30px 30px 30px; }
 
+.lienket_area {
+  padding: 30px 0; }
+  .lienket_area img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 80%; }
+
 .section-a {
   padding: 30px 0;
   text-align: center;
