@@ -16,34 +16,11 @@ var config = {
 // kết nối sequelize với database
 var sequelize = new Sequelize(config.database, config.username, config.password, config);
 
-// Định nghĩa table USER
-var User = sequelize.define('user', {
-  firstName: {
-    type: Sequelize.STRING,
-    field: 'first_name' // Will result in an attribute that is firstName when user facing but first_name in the database
-  },
-  lastName: {
-    type: Sequelize.STRING
-  }
-}, {
-  freezeTableName: true // Model tableName will be the same as the model name
-});
-
-//Tao du lieu ban dau
-User.sync({force: true}).then(function () {
-  // Table created
-  return User.create({
-    firstName: 'John',
-    lastName: 'Hancock'
-  });
-});
-
-
-var DichVu = sequelize.define('dichvu2', {
-  dichvu: {
+var DichVu = sequelize.define('dichvu', {
+  ten: {
     type: Sequelize.STRING
   },
-  tenhinh: {
+  hinh: {
     type: Sequelize.STRING
   },
   diengiai: {
@@ -57,17 +34,7 @@ var DichVu = sequelize.define('dichvu2', {
 });
 
 //Tao du lieu ban dau
-DichVu.sync({force: true}).then(function () {
-  // Table created
-  return DichVu.create(
-    {
-      dichvu: 'Tư vấn - Quản lí',
-      tenhinh: 'tuvanqlda',
-      diengiai:'xxxx',
-      fa:'xxxx'
-    }
-  );
-});
+sequelize.sync();
 
 
 app.use(express.static('public'));
@@ -87,22 +54,22 @@ app.get("/", function(req, res) {
     res.render('index',{dichvu: dv});
   });
 
-  User.findAll().then(function (usr) {
-    res.render('index',{doingu: usr});
-  });
-
-
-
 });
 
-app.get("/about", function(req, res){
+app.get("/gioi-thieu", function(req, res){
   res.render('about');
 })
-app.get("/power", function(req, res){
+app.get("/nang-luc", function(req, res){
   res.render('power');
 })
-app.get("/services", function(req, res){
+app.get("/dich-vu", function(req, res){
   res.render('services');
+})
+app.get("/tin-tuc", function(req, res){
+  res.render('news');
+})
+app.get("/lien-he", function(req, res){
+  res.render('contact');
 })
 app.get("/bien-dao-viet-nam", function(req, res){
   res.render('biendao');

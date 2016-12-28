@@ -26,9 +26,10 @@
           <%}else{%>
             <div class="item">
           <%}%>
-            <img src="/img/<%= dv.tenhinh%>.jpg" alt="">
+            <img src="/img/<%= dv.hinh%>.jpg" alt="">
             <div class="carousel-caption">
-              <h3><%= dv.dichvu%></h3>
+              <h3><%= dv.ten%></h3>
+              <p><%= dv.diengiai %></h3>
             </div>
           </div>
         <%});%>
@@ -46,20 +47,17 @@
     <div class="lienket_area" id="lienket">
       <div class="container">
         <div class="row">
+
           <!--section title-->
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <a href="http://113.160.178.189:8686/"><img alt=" " src="http://icti-hcm.gov.vn/sites/default/files/images/vs01-helpdesk.png"></a>
-          </div>
-          <!--section title-->
-          <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="col-md-4">
             <a href="http://lichict.hatinh.gov.vn:8000/lichict/plugin_show/index"><img alt=" " src="http://icti-hcm.gov.vn/sites/default/files/images/lichct.jpg"></a>
           </div>
           <!--section title-->
-          <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="col-md-4">
             <a href="http://congbao.hatinh.gov.vn"><img alt=" " src="http://icti-hcm.gov.vn/sites/default/files/images/cosodulieu-vbpl.jpg"></a>
           </div>
           <!--section title-->
-          <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="col-md-4">
             <a href="/bien-dao-viet-nam"><img alt=" " src="http://icti-hcm.gov.vn/sites/default/files/images/biendao.jpg"></a>
           </div>
         </div>
@@ -74,12 +72,12 @@
           </div>
 
           <% dichvu.forEach(function(dv){ %>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <i class="fa <%= dv.fa%>"></i>
 
               <div class="block-dichvu">
 
-                <h3><%= dv.dichvu%></h3>
+                <h3><%= dv.ten%></h3>
                 <p><%= dv.diengiai%></p>
               </div>
             </div>
@@ -217,6 +215,47 @@
           <p>HTI-ICTC - Hỗ trợ cho các doanh nghiệp trong và ngoài tỉnh triển khai ứng dụng CNTT.</p>
           <p>HTI-ICTC - Luôn là đơn vị tiên phong trong việc áp dụng công nghệ mới trong triển khai các ứng dụng công nghệ thông tin, chính sách nhân sự mới, hiện đại và tiên tiến.</p>
           <p>HTI-ICTC cam kết mang đến những sản phẩm và dịch vụ hoàn hảo nhất, xây dựng niềm tin và sự bền vững giữa khách hàng và chuyên viên tư vấn bởi phong cách làm việc tận tụy, chuyên nghiệp và sáng tạo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-f">
+      <div class="container">
+        <div class="row">
+          <h2>Tin tức - Sự kiện</h2>
+          <div id="owl-demo2" class="owl-carousel owl-theme">
+            <div class="item"><h1>1</h1></div>
+            <div class="item"><h1>2</h1></div>
+            <div class="item"><h1>3</h1></div>
+            <div class="item"><h1>4</h1></div>
+            <div class="item"><h1>5</h1></div>
+            <div class="item"><h1>6</h1></div>
+            <div class="item"><h1>7</h1></div>
+            <div class="item"><h1>8</h1></div>
+            <div class="item"><h1>9</h1></div>
+            <div class="item"><h1>10</h1></div>
+            <div class="item"><h1>11</h1></div>
+            <div class="item"><h1>12</h1></div>
+            <div class="item"><h1>13</h1></div>
+            <div class="item"><h1>14</h1></div>
+            <div class="item"><h1>15</h1></div>
+            <div class="item"><h1>16</h1></div>
+          </div>
+
+          <div class="customNavigation">
+            <a class="btn prev">Previous</a>
+            <a class="btn next">Next</a>
+            <a class="btn play">Autoplay</a>
+            <a class="btn stop">Stop</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-g">
+      <div class="container">
+        <div class="row">
+          <h2>Đối tác</h2>
         </div>
       </div>
     </div>
