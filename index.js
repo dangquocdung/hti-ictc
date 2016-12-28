@@ -94,3 +94,16 @@ app.get("/", function(req, res) {
 
 
 });
+
+app.get("/about", function(req, res){
+  res.render('about');
+})
+app.get("/power", function(req, res){
+  res.render('power');
+})
+app.get("/services", function(req, res){
+  res.render('services');
+})
+app.get("/bien-dao-viet-nam", function(req, res){
+  res.render('biendao');
+})
