@@ -8140,6 +8140,8 @@ button.close {
     font-size: 30px;
     font-weight: bold;
     color: #f70606 !important; }
+  .navbar h3 {
+    color: red; }
 
 .showcase {
   background: #e6ebf1;
@@ -8254,24 +8256,6 @@ button.close {
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: center; }
-  .section-f #owl-demo2 .item {
-    background: #3fbf79;
-    padding: 30px 0px;
-    margin: 10px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center; }
-  .section-f .customNavigation {
-    text-align: center; }
-  .section-f .customNavigation a {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent; }
 
 .section-g {
   background: #e6ebf1;
