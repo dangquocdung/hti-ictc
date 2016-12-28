@@ -10,3 +10,15 @@
 .events-header{
   margin-bottom: 5px;
 }
+
+.section-a .fa {
+    border-radius: 5px;
+}
+
+.section-a .block-dichvu {
+  border-radius: 5px;
+}
+
+.navbar {
+    border-radius: 0px;
+}
